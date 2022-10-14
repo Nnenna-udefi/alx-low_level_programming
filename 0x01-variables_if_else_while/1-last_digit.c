@@ -4,7 +4,7 @@
 /**
  * main - prints the last digits of the random
  * number stored in the variable n
- * Return 0 always if successfull
+ * Return: 0 if errors, return non-zero if no errors.
  */
 int main(void)
 {
