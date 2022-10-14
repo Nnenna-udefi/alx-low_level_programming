@@ -17,13 +17,13 @@ int main(void)
 				putchar (n);
 				putchar (m);
 				if (n != 56 || m != 57)
-						{
-						putchar (',');
-						putchar (' ');
-						}
-						}
-						}
-						}
-						putchar ('\n');
-						return (0);
-						}
+				{
+					putchar (',');
+					putchar (' ');
+				}
+			}
+		}
+	}
+	putchar ('\n');
+	return (0);
+}
