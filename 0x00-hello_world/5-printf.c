@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - prints the phrase with proper grammer,
- * but the output is a piece of art,
- * Return, 0 if exited properly, non-zero if otherwise.
+ * main - entry point for the program.
+ * 
+ * Return, 0 if no errors, return non-zero if errors.
  */
 int main(void)
 {
