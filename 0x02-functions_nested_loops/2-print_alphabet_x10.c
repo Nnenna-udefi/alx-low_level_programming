@@ -26,7 +26,3 @@ void print_alphabet_x10(void)
 		n++;
 		}
 }
-
-	void print_alphabet_x10();
-	return (0);
-
