@@ -13,7 +13,7 @@ int main(void)
 	sum3 = 0;
 	sum5 = 0;
 	sum = 0;
-	
+
 	for (i = 0; i < 1024; i++)
 	{
 		if ((i % 3) == 0)
@@ -22,7 +22,7 @@ int main(void)
 		}
 		else if ((i % 5) == 0)
 		{
-			sum5 = sum5 + i;
+			sum5 = sum5 +i;
 		}
 	}
 	sum = sum3 + sum5;
