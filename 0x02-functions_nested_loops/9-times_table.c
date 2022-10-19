@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - function that prints 9 times table starting with 0
+ * times_table - function that prints 9 times table starting with 0
  * Return: Always 0;
  */
 void times_table(void)
@@ -27,8 +27,8 @@ void times_table(void)
 			{
 				_putchar (',');
 				_putchar (' ');
-				_putchar ((k / 10) + '0');
-				_putchar ((k % 10) + '0');
+				_putchar ((l / 10) + '0');
+				_putchar ((l % 10) + '0');
 			}
 		}
 		_putchar ('\n');
