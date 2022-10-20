@@ -9,24 +9,23 @@
  */
 int main(void)
 {
-	int i;
-	char f[] = 'Fizz';
-	char b[] = 'Buzz';
-	char fb[] = 'FizzBuzz';
+	int i = 1;
 
-	for (i = 1; i <= 100; i++)
+	while (i <= 100)
 	{
 		if (i % 3 == 0)
-			printf("%s ", f);
+			printf("Fizz");
 		else if (i % 5 == 0)
-			printf("%s ", b);
+			printf("Buzz");
 		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s ", fb);
-		else if (i == 100)
-			printf("%s", b);
+			printf("FizzBuzz");
+		else if (i < 100)
+			printf(" ");
 		else
 			printf("%d", i);
+
+		i++;
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
