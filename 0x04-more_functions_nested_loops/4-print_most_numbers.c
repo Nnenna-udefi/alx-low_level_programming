@@ -4,7 +4,7 @@
  * 0 to 9, followed by a new line
  * Return: 0 to 9 except 2 and 4
  */
-void print_most_numbes(void)
+void print_most_numbers(void)
 {
 	int i;
 
