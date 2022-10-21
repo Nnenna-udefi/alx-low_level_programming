@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * positive_or_negative - function that prints if integer
@@ -8,6 +11,8 @@
 
 void positive_or_negative(int i)
 {
+	srand(time(0));
+	i = rand() - RAND_MAX / 2;
 
 	if (i > 0)
 		printf("%d is positive\n", i);
