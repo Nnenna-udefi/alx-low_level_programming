@@ -6,7 +6,8 @@
 void puts_half(char *str)
 {
 	int i, j;
-	int len = 0;	
+	int len = 0;
+
 	for (i = 0; str[i]; i++)
 		len++;
 	j = len / 2;
