@@ -4,7 +4,7 @@
  * @s: integer
  * number in the string can be preceded by infinite numbers
  * take account of all the - and + signs before the number
- * Return - 0, if there are no numbers in the string
+ * Return: 0, if there are no numbers in the string
  */
 int _atoi(char *s)
 {
