@@ -5,15 +5,17 @@
  */
 void rev_string(char *s)
 {
-	int i, n;
-	rev = 0;
+	int i;
+	int n = 0;
+	char rev = s[0];
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[n] != '\0')
+		n++;
+	for (i = 0; i < n; i++)
 	{
-		rev++;
-	}
-	for (n = (rev - 1); n >= 0; n--)
-	{
-		s[i];
+		n--;
+		rev = s[i];
+		s[i] = s[n];
+		s[n] = rev;
 	}
 }
