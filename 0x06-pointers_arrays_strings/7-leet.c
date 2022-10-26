@@ -11,22 +11,19 @@
  */
 char *leet(char *j)
 {
-	int i;
-	int aa[] = {'a', 'A'};
-	int ee[] = {'e', 'A'};
-	int oo[] = {'o', 'O'};
-	int tt[] = {'t', 'T'};
-	int ll[] = {'l', 'L'};
+	int i, x;
+	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	int replace[] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; j[i] != '\0'; i++)
 	{
-		if (j[i] = (aa[] || ee[] || oo[] || tt[] || ll[]))
+		for (x = 0; x <= 9; x++)
 		{
-			aa[] = 4;
-			ee[] = 3;
-			oo[] = 0;
-			tt[] = 7;
-			ll[] = 1;
+			if (j[i] == find[x])
+			{
+				j[i] = replace[x / 2];
+				x = 9;
+			}
 		}
 	}
 	return (j);

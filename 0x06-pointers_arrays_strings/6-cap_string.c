@@ -9,11 +9,11 @@ char *cap_string(char *c)
 	int i, j;
 	int cap = 32;
 	int seperators[] = {',', ';', '.', '?', '"', '(',
-		')', '{' '}', ' ',  '\n' '\t'};
+		')', '{', '}', ' ',  '\n', '\t'};
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (c[i] >= 'a' && <= 'z')
+		if (c[i] >= 'a' && c[i] <= 'z')
 			c[i] -= cap;
 		cap = 0;
 
@@ -27,3 +27,4 @@ char *cap_string(char *c)
 		}
 	}
 	return (c);
+}
