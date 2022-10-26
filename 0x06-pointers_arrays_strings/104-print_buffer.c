@@ -24,11 +24,11 @@ void print_buffer(char *b, int size)
 		printf("%08x: ", i * 10);
 		if (i < size / 10)
 		{
-			_putchar(b, 9, i);
+			printf(b, 9, i);
 		}
 		else
 		{
-			_putchar(b, size % 10 - 1, i);
+			printf(b, size % 10 - 1, i);
 		}
 		_putchar('\n');
 	}
