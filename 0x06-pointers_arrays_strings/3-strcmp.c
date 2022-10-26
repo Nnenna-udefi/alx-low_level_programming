@@ -5,7 +5,7 @@
  * @s2: string
  * Return: 0 and the difference between the strings
  */
-int _strcmp(char *s1; char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
