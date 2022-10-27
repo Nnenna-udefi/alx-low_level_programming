@@ -10,7 +10,7 @@ char *rot13(char *k)
 
 	for (i = 0; k[i] != '\0'; i++)
 	{
-		if (k[i] >= ('a' || 'A') && k[i] <= ('z' || 'Z'))
+		if (k[i] >= ('a' && 'A') || k[i] <= ('z' && 'Z'))
 			k[i] += 13;
 	}
 	return (k);
