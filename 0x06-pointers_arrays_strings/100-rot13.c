@@ -12,7 +12,7 @@ char *rot13(char *k)
 	{
 		if ((k[i] > 'A' && k[i] < 'N') || (k[i] > 'a' && k[i] < 'n'))
 			k[i] += 13;
-		else if ((k[i] > 'M' && k[i] < 'Z') || (k[i] > 'm' && k[i] < 'z'))
+		else
 			k[i] -= 13;
 	}
 	return (k);
