@@ -24,7 +24,7 @@ void print_buffer(char *b, int size)
 		printf("%08x: ", i * 10);
 		if (i < size / 10)
 		{
-			printf("%02x%02x ", b, 9, i);
+			printf(b, "%02x%02x ", 9, i);
 		}
 		else if (i > size / 10)
 		{
