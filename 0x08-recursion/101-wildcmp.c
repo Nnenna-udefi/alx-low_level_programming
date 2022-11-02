@@ -5,7 +5,7 @@ int findsrc(char *s, char c, int i, int p);
  * wildcmp - function taht compares two strings
  * @s2: input that can contain the character *
  * @s1: input
- * Return 1 if the string might be considered identical, 0 if otherwise
+ * Return: 1 if the string might be considered identical, 0 if otherwise
  */
 int wildcmp(char *s1, char *s2)
 {
@@ -34,6 +34,14 @@ int wildcmp(char *s1, char *s2)
 	return (0);
 }
 
+/**
+ * findsrc - function that adds the * character
+ * @s: string
+ * @c: integer
+ * @i: integer
+ * @p: integer
+ * Return: 0;
+ */
 int findsrc(char *s, char c, int i, int p)
 {
 	if (*(s + i) == '\0')
