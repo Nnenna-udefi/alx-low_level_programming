@@ -6,7 +6,7 @@ int palindrome(char str[], int st, int end);
  * @s: input
  * Return: 1 if a string is a palindrome, 0 if otherwise
  */
-int is_palindrome(int *s)
+int is_palindrome(char *s)
 {
 	int len;
 
