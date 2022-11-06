@@ -1,4 +1,3 @@
- (21 sloc)  378 Bytes
 #include "main.h"
 /**
  * _strcat - function that concatenates two strings
