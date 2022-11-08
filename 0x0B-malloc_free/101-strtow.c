@@ -6,17 +6,32 @@
  */
 char **strtow(char *str)
 {
-	int i, j;
+	int i, j, k;
 	char *a;
 
-	if (str == NULL || str == "")
-		return (NULL);
+	printf("\n\n Split string by space into words :\n");
+	scanf("Input a string : ");
+
+	j = 0; k = 0;
+	a = malloc(sizeof(str) * i);
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == (str[i] - 1)
-				return (NULL);
-				}
-	a = malloc(i * (sizeof(str);
-	if (a == NULL)
+		if (str[i] == NULL || str[i] == "")
+		{
+			a[j][k] = '\0';
+			k++;
+			j = 0;
+			return (NULL);
+		}
+		else
+		{
+			a[j][k] = str[i];
+			j++;
+		}
+	}
+	printf("\n Strings or words after split by space are :\n");
+	for(i = 0; i < k; i++)
+		printf(" %s\n", a[i]);
 	return (NULL);
-	};
+}
