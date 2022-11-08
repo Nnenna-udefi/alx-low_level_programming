@@ -1,4 +1,4 @@
-#include "main h"
+#include "main.h"
 /**
  * str_concat -  function that concatenates a string
  * @s1: first string
