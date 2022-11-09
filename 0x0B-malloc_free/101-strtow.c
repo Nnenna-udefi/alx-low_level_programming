@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * strtow - function that splits a string into two words
  * @str: pointer string
@@ -7,17 +8,17 @@
 char **strtow(char *str)
 {
 	int i, j, k;
-	char *a;
+	char **a;
 
 	printf("\n\n Split string by space into words :\n");
 	scanf("Input a string : ");
 
 	j = 0; k = 0;
-	a = malloc(sizeof(str) * i);
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] = NULL || str[i] = "")
+		a= malloc(sizeof(str) * i);
+		if (str == NULL || str == " ")
 		{
 			a[j][k] = '\0';
 			k++;
