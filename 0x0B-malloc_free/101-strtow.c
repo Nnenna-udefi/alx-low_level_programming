@@ -13,12 +13,13 @@ char **strtow(char *str)
 	printf("\n\n Split string by space into words :\n");
 	scanf("Input a string : ");
 
-	j = 0; k = 0;
+	j = 0;
+	k = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		a= malloc(sizeof(str) * i);
-		if (str == NULL || str == " ")
+		a = malloc(sizeof(str) * i);
+		if (str == NULL)
 		{
 			a[j][k] = '\0';
 			k++;
@@ -32,7 +33,7 @@ char **strtow(char *str)
 		}
 	}
 	printf("\n Strings or words after split by space are :\n");
-	for(i = 0; i < k; i++)
+	for (i = 0; i < k; i++)
 		printf(" %s\n", a[i]);
 	return (NULL);
 }
