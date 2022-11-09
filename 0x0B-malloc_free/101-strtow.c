@@ -17,7 +17,7 @@ char **strtow(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == NULL || str[i] == "")
+		if (str[i] = NULL || str[i] = "")
 		{
 			a[j][k] = '\0';
 			k++;
