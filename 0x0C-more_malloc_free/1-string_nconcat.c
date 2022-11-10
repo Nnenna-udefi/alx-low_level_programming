@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * function that concatenates two strings
+ * string_nconcat - function that concatenates two strings
  * @s1: pointer
+ * @n: input
  * @s2: second pointer
  * The returned pointer shall point to a newly allocated
  * space in memory, which contains s1
