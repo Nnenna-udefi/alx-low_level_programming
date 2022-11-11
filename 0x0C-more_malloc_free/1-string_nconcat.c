@@ -1,4 +1,5 @@
 #include "main.h"
+int _strlen(char *s);
 /**
  * string_nconcat - function that concatenates two strings
  * @s1: pointer
@@ -12,38 +13,39 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *arr;
-	unsigned int i, j, co, co_2;
+	int strlen1, i, j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-	}
-
-	for (j = 0; s2[j] != '\0'; j++)
-	{
-	}
-
-	if (n < j)
-		j = n;
-
-	j += i;
-	arr = malloc(sizeof(char *) * (j + 1));
+	strlen1 = (unsigned int)_strlen(s1);
+	arr = malloc((strlen + n + 1) * sizeof(char));
 
 	if (arr == NULL)
 		return (NULL);
 
-	for (co = 0; co < i; co++)
-		arr[co] = s1[co];
-	for (co_2 = 0; co < j; co_2++)
+	for (i = 0, j = 0; i < (strlen1 + n); i++)
 	{
-		arr[co] = s2[co_2];
-		co++;
+		if (i < strlen1)
+			arr[i] = s1[i];
+		else
+			arr[i] = s2[j++];
 	}
-	co++;
-	arr[co] = '\0';
+	arr[i] = '\0';
+
 	return (arr);
+}
+/**
+ * _strlen - length of the string
+ * @s: string
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
 }
