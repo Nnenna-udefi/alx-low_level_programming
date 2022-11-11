@@ -13,24 +13,25 @@ int _strlen(char *s);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *arr;
-	int strlen1, i, j;
+	unsigned int strlen1;
+	unsigned int i, j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 	strlen1 = (unsigned int)_strlen(s1);
-	arr = malloc((strlen + n + 1) * sizeof(char));
+	arr = malloc((strlen1 + n + 1) * sizeof(char));
 
 	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0, j = 0; i < (strlen1 + n); i++)
 	{
-		if (i < strlen1)
-			arr[i] = s1[i];
-		else
+		if (i > strlen1)
 			arr[i] = s2[j++];
+		else
+			arr[i] = s1[i];
 	}
 	arr[i] = '\0';
 
