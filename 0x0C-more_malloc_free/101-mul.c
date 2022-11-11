@@ -13,9 +13,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int mul;
+	int mul = 0;
 	int num1, num2;
-	(void) argv[];
 
 	for (num1 = 0, num2 = 0; (num1 >= 0 && num2 >= 0); num1++, num2++)
 	{
@@ -24,9 +23,10 @@ int main(int argc, char *argv[])
 			mul = num1 * num2;
 			printf("%d\n", mul);
 		}
-		else (argc < 2)
+		else if (argc < 2)
 		{
-			printf('Error\n');
+			(void) argv[mul];
+			printf("Error\n");
 			exit(98);
 		}
 	}
