@@ -1,5 +1,4 @@
 #include <stdio.h>
-int _putchar(char c);
 
 /** main - program that prints the name of the file
  * from which it was compiled from
@@ -7,6 +6,6 @@ int _putchar(char c);
  */
 int main(void)
 {
-	_putchar("%s\n", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
