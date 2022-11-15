@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * new_dog - function that creates a new dog
@@ -40,8 +41,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (k = 0; k <= j; k++)
 		o[k] = owner[k];
 
-	dog->name = n;
-	dog->age = age;
+	doge->name = n;
+	doge->age = age;
 	doge->owner = o;
 
 	return (doge);
