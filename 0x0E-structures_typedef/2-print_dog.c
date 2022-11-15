@@ -3,6 +3,7 @@
 /**
  * print_dog - function that prints struct dog
  * If an element of d is NULL, print (nil)
+ * @d: struct dog
  */
 void print_dog(struct dog *d)
 {
