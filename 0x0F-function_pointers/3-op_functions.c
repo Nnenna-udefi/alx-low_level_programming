@@ -5,7 +5,7 @@
  * op_add - function that returns a sum
  * @a: input
  * @b: input
- * Return: 0;
+ * Return: 0
  */
 int op_add(int a, int b)
 {
@@ -15,7 +15,7 @@ int op_add(int a, int b)
  * op_sub - function that subtracts
  * @a: input
  * @b: input
- * Return: 0;
+ * Return: 0
  */
 int op_sub(int a, int b)
 {
