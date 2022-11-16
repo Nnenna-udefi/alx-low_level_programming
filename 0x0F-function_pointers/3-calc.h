@@ -20,4 +20,4 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-#endif /*CALC_H
+#endif /*CALC_H */
