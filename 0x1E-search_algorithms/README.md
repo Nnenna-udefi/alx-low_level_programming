@@ -1,1 +1,1 @@
-# Search Algorithm
+# Searching Algorithm
