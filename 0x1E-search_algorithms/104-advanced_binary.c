@@ -1,16 +1,14 @@
 #include "search_algos.h"
 
 /**
- * rec_search - searches for a value in an array of
+ * _bnary_search - searches for a value in an array of
  * integers using the Binary search algorithm
- *
- *
  * @array: input array
  * @size: size of the array
  * @value: value to search in
  * Return: index of the number
  */
-int rec_search(int *array, size_t size, int value)
+int _bnary_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
 	size_t i;
@@ -31,15 +29,15 @@ int rec_search(int *array, size_t size, int value)
 	if (value == array[half])
 	{
 		if (half > 0)
-			return (rec_search(array, half + 1, value));
+			return (_bnary_search(array, half + 1, value));
 		return ((int)half);
 	}
 
 	if (value < array[half])
-		return (rec_search(array, half + 1, value));
+		return (_bnary_search(array, half + 1, value));
 
 	half++;
-	return (rec_search(array + half, size - half, value) + half);
+	return (_bnary_search(array + half, size - half, value) + half);
 }
 
 /**
@@ -55,7 +53,7 @@ int advanced_binary(int *array, size_t size, int value)
 {
 	int index;
 
-	index = rec_search(array, size, value);
+	index = _bnary_search(array, size, value);
 
 	if (index >= 0 && array[index] != value)
 		return (-1);
